@@ -1,8 +1,10 @@
-# sehyunict - smart
+# smart
 
-## free study repo
+```
+자유롭게 공부하고 공유하는 공간
+```
 
-### contact us
+#### contact us
 ```
 hjhwang@sehyunict.com
 ```
