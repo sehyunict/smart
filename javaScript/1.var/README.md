@@ -102,7 +102,7 @@ out();
 <br/>
 
 #### 다음편 
-2.scope - http://git.sehyunict.com:8890/SolutionTF/study/tree/master/javaScript/2.scope
+2.scope - https://github.com/sehyunict/smart/tree/master/javaScript/2.scope
 
 <br/>
 <br/>
