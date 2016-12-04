@@ -50,7 +50,6 @@ var를 선언한 변수는 함수 내에서만 유효하다고 1장에서 설명
 sample1, sample2 코드는 가능하며, sample3 코드는 불가능하다.
 
  이것은 자바스크립트에서 변수의 유효범위는 블럭 단위가 아니라 함수 단위임을 의미한다.
-
 <br/><br/>
 
 #### sample4
@@ -68,7 +67,12 @@ public static void main(String[] args) {
 <br/><br/>
 <br/>
 
-# 계속 진행중..
+#### 이전편 
+1.var - https://github.com/sehyunict/smart/tree/master/javaScript/1.var
+#### 다음편
+3.function - https://github.com/sehyunict/smart/tree/master/javaScript/3.function
 
+<br/>
+<br/>
 <br/>
 <br/>
