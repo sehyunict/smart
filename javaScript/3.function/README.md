@@ -51,6 +51,7 @@ function A( param1, param2 ){
 A(); //undefined undefined
 A("param1"); //"param1" undefined
 A("param1", "param2"); //"param1" "param2"
+A("param1", "param2", "param3"); // "param1" "param2"
 ```
 sample4는 자바라면 에러를 내뱉겠지만, 자바스크립트에선 허용을 하고 있다.
 
@@ -68,6 +69,33 @@ B( "A", 1, "B", 2 ); //{ 0: "A", 1: 1, 2: "B", 3: 2, length: 4, callee: B }
 ```
 함수 B의 실행 결과를 보면, 객체 하나가 찍힌 것을 볼 수 있다.
 
+함수는 내부적으로 arguments와 this라는 값을 갖고 있다.
+
+arguments는 Array객체와 비슷한 구조이지만, 다른 객체이므로 Array의 메서드를 사용할 수 없다.
+
+arguments의 callee 속성은 arguments 객체를 생성한 함수의 참조 이다.
+
+※ callee를 사용하면 이름이 같은 함수가 여럿이더라도 호출했던 함수의 참조를 알아낼 수 있다. 
+<br/><br/>
+
+#### sample6
+```javascript
+function person(name, age){
+	console.log( name, age ); //홍길동 45
+	name = "cmd[var]";
+	console.log( arguments[0], arguments[1] ); //cmd[var] 45
+	arguments[0] = "cmd[args]";
+	console.log( name, age ); //cmd[args] 45
+}
+person("홍길동", 45);
+```
+함수에 전달받은 매개값을 변경했을 때, arguments 객체의 값도 변경된다.
+
+arguments 객체의 값을 변경했을 때, 함수에 전달받은 매개값도 변경된다.
+
+전달받은 매개값은 arguments의 속성 값으로 들어가기 때문에 같은 참조를 갖게 된다.
+
+
 #진행중..
 
 <br/><br/>
@@ -75,7 +103,7 @@ B( "A", 1, "B", 2 ); //{ 0: "A", 1: 1, 2: "B", 3: 2, length: 4, callee: B }
 #### 이전편 
 2.scope - https://github.com/sehyunict/smart/tree/master/javaScript/2.scope
 #### 다음편
-4.hoesting
+4.context
 
 <br/>
 <br/>
