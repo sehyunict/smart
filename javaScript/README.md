@@ -3,6 +3,6 @@
 
 #### TODO
 
-3. function
+	function
 
-X. ECMA-262 Object
+	ECMA-262 Object
