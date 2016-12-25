@@ -5,4 +5,4 @@
 
 	function
 
-	ECMA-262 Object
+	ECMA-262(5판) Object
