@@ -4,7 +4,7 @@ ECMA-262 5판의 Object를 설명한다.
 
 <br/>
 
-#### sample1
+>sample1
 ```javascript
 //생성자를 통한 객체 선언
 var person1 = new Object();
@@ -38,7 +38,7 @@ sample1은 자바스크립트에서 객체를 생성하는 방법이다.
 
 ## 데이터 프로퍼티
 
-#### sample2
+>sample2
 ```javascript
 var person1 = {
 	name: "짱구"
@@ -90,7 +90,7 @@ configurable을 false로 할당하면,
 
 <br/><br/>
 
-#### sample3
+>sample3
 ```javascript
 var person1 = {
 	name	: "짱구",
@@ -133,7 +133,7 @@ enumerable속성을 true로 재정의하면, keys메서드에서 age프로퍼티
 
 <br/><br/>
 
-#### sample4
+>sample4
 ```javascript
 var person1 = {
 	name	: "짱구",

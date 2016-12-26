@@ -2,7 +2,7 @@
 
 <br/>
 
-#### sample1
+>sample1
 ```javascript
 var animal = "사자";
 console.log( animal ); //"사자"
@@ -10,7 +10,7 @@ console.log( animal ); //"사자"
 우리가 사용하는 보통의 변수 선언이다.
 <br/><br/>
 
-#### sample2
+>sample2
 ```javascript
 animal = "사자";
 console.log( animal ); //"사자"
@@ -18,7 +18,7 @@ console.log( animal ); //"사자"
 반드시 var 명령어를 붙여야 변수가 선언되는 건 아니다.
 <br/><br/>
 
-#### sample3
+>sample3
 ```javascript
 //var를 선언하지 않은 변수
 fruit = "사과";
@@ -42,7 +42,7 @@ console.log( person === window.person ); //true
 window 객체의 속성값으로 저장되며 어디서든 접근 가능한 전역 변수가 된다.
 <br/><br/>
 
-#### sample4
+>sample4
 ```javascript
 function setPerson(){
 	//var를 선언하지 않은 변수
@@ -64,7 +64,7 @@ var를 선언한 변수는 그 변수를 감싸고 있는 함수 내에서만 �
 함수 외부에서는 접근이 불가능하다.
 <br/><br/>
 
-#### sample5
+>sample5
 ```javascript
 function out(){
 	var person = "홍길동";
@@ -80,7 +80,7 @@ var를 선언한 변수는 그 변수를 감싸고 있는 함수 내에서만 �
 함수 내 내부함수도 그 변수에 접근할 수 있다.
 <br/><br/>
 
-#### sample6
+>sample6
 ```javascript
 function out(){
 	var person = "홍길동";

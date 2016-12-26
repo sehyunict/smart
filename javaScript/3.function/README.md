@@ -2,7 +2,7 @@
 
 <br/>
 
-#### sample1
+>sample1
 ```javascript
 //함수의 선언
 function A( a, b ){
@@ -13,7 +13,7 @@ A(1, 2); //3
 sample1은 함수를 선언한 것이다.
 <br/><br/>
 
-#### sample2
+>sample2
 ```javascript
 //함수의 표현
 var B = function( a, b ){
@@ -24,7 +24,7 @@ B(1, 2); //3
 sample2는 익명함수릏 변수에 할당한 것이다.
 <br/><br/>
 
-#### sample3
+>sample3
 ```javascript
 //생성자에 의한 표현
 var C = new Function( "a", "b", "return a + b" );
@@ -43,7 +43,7 @@ C의 예제를 보면 함수를 생성자로 생성이 가능하다는 것인데
 이 것은 함수가 사실 **객체**이고, Function 타입의 **인스턴스**이며, **프로퍼티**와 **메서드**를 갖고 있다는 것을 의미한다.
 <br/><br/>
 
-#### sample4
+>sample4
 ```javascript
 function A( param1, param2 ){
 	console.log( param1, param2 );
@@ -60,7 +60,7 @@ sample4는 자바라면 에러를 내뱉겠지만, 자바스크립트에선 허�
 따라서 함수에 정의된 매개값 보다 수가 적든 많든 함수는 실행된다.
 <br/><br/>
 
-#### sample5
+>sample5
 ```javascript
 function B(){
 	console.log( arguments );
@@ -78,7 +78,7 @@ arguments의 callee 속성은 arguments 객체를 생성한 함수의 참조 이
 ※ callee를 사용하면 이름이 같은 함수가 여럿이더라도 호출했던 함수의 참조를 알아낼 수 있다. 
 <br/><br/>
 
-#### sample6
+>sample6
 ```javascript
 function person(name, age){
 	console.log( name, age ); //홍길동 45
