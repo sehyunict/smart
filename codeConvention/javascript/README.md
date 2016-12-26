@@ -27,7 +27,8 @@
 <br/><br/>
 
 ######Bad Examples
-```javascript
+
+<pre><code>
 // , 특수문자 사이 공백없음 & ,앞에 공백존재
 var options,name; 
 var src , copy , copyIsArray;
@@ -46,10 +47,11 @@ if ( copyIsArray ) {
 } else {
 	clone = src && jQuery.isPlainObject( src ) ? src : {};
 }
-```
+</code></pre>
 
 ######Good Examples
-```javascript
+
+<pre><code>
 var options,name, src, copy, copyIsArray;
 
 if ( typeof target === "boolean" ) {
@@ -62,4 +64,4 @@ if ( copyIsArray ) {
 } else {
 	clone = src && jQuery.isPlainObject( src ) ? src : {};
 }
-```
+</code></pre>
