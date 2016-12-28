@@ -21,7 +21,7 @@ var B = function( a, b ){
 };
 B(1, 2); //3
 ```
-sample2는 익명함수릏 변수에 할당한 것이다.
+sample2는 익명함수를 변수에 할당한 것이다.
 <br/><br/>
 
 >sample3
