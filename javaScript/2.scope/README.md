@@ -6,7 +6,7 @@
 ECMA스크립트에서는 scope를 실행 컨텍스트(EC)라고 부른다.
 <br/><br/>
 
->sample1
+####sample1
 ```javascript
 function test(){
 	for(var i=0; i<10; i++){
@@ -21,7 +21,7 @@ test();
 number란 변수는 for문안에 선언되었는데, 콘솔에 표시되고 있다. 
 <br/><br/>
 
->sample2
+####sample2
 ```javascript
 function test(){
 	if( true ){
@@ -34,7 +34,7 @@ test();
 마찬가지로 if문안에 선언된 animal 변수가 콘솔에 표시되고 있다.
 <br/><br/>
 
->sample3
+####sample3
 ```javascript
 function setAnimal(){
 	//함수 내 var를 선언한 변수
@@ -53,7 +53,7 @@ sample1, sample2 코드는 가능하며, sample3 코드는 불가능하다.
  이것은 자바스크립트에서 변수의 유효범위는 블럭 단위가 아니라 함수 단위임을 의미한다.
 <br/><br/>
 
->sample4
+####sample4
 ```java
 public static void main(String[] args) {
 	if( true ){
@@ -67,7 +67,7 @@ public static void main(String[] args) {
 자바와 자바스크립트의 스코프가 다르므로 코딩을 할 때, 혼선이 생길 수 있다.
 <br/><br/>
 
->sample5
+####sample5
 ```javascript
 var worldObj = "world";
 console.log( window );
@@ -85,7 +85,7 @@ localScope("local");
 로컬 스코프의 변수객체는 arguments가 된다.
 <br/><br/>
 
->sample6
+####sample6
 ```javascript
 var v0 = "v0";
 function scope1(){
