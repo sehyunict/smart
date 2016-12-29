@@ -1,11 +1,9 @@
-## codeConvention
+> codeConvention
+* html_css
+* javascript
 
-html_css
+> gitHub
 
-javascript
+> javascript
 
-## gitHub
-
-## javascript
-
-## noSql
+> noSql
