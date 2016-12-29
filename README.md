@@ -6,10 +6,10 @@
 ```
 <br><br>
 
-> 목록
+> ####목록
 <br/>
 > 1. md File 작성법
 https://github.com/sehyunict/smart/tree/master/gitHub/1.markdown
 <br/>
-> 2. Issues 사용방법
+> 2. Issues 사용법
 https://github.com/sehyunict/smart/tree/master/gitHub/2.issues

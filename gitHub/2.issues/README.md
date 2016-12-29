@@ -1,7 +1,6 @@
-####2. Issues 사용방법
----
+#2. Issues 사용방법
 
-> 제목 작성 요령
+> ####제목 작성 요령
 
 ```
 [공부주제/목차] issues내용
@@ -14,7 +13,7 @@ ex) [javascript/1.var] sample1이 궁금합니다.
 
 <br>
 
-> [필수]Assignees, Labels / [선택] Milestone
+> ####[필수]Assignees, Labels / [선택] Milestone
 
 ![screenshot](https://cloud.githubusercontent.com/assets/9654829/21534334/b3116a68-cda8-11e6-8f6a-70453eb04c97.png)
 **Assignees**에서 user를 선택하면, 대상user의 github dashboard에 알람이 표시됩니다.
