@@ -1,5 +1,3 @@
-
-# index<br/>
 #### codeConvention
 > [html_css](https://github.com/sehyunict/smart/tree/master/codeConvention/html_css)<br/>
 > [javascript](https://github.com/sehyunict/smart/tree/master/codeConvention/javascript)
@@ -16,11 +14,11 @@
 
 #### noSql
 > ready
-
 <br/>
 <br/>
 <br/>
 <br/>
 
+***
 > **web URL**  - <span>https://github.com/sehyunict/smart.git</span><br/>
 > **download** - <a>https://github.com/sehyunict/smart/archive/master.zip</a>
