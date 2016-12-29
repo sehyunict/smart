@@ -147,6 +147,8 @@ var baz = firstCondition( foo ) && secondCondition( bar ) ?
 
 * 조건문의 조건이 너무 길어서 한 줄에 들어갈 수없는 경우 연속적인 줄은 본문과 구분하기 위해 한 단계 더 들여 쓰기 한다
 
+>Good Examples
+
 ```javascript
 if ( firstCondition() && secondCondition() &&
 		thirdCondition() ) {
