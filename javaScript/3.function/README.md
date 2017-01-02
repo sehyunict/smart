@@ -29,6 +29,8 @@ sample2는 익명함수를 변수에 할당한 것이다.
 //생성자에 의한 표현
 var C = new Function( "a", "b", "return a + b" );
 C(1, 2); //3
+
+console.log( C.prototype );//C는 함수이면서 속성값이 존재한다.
 ```
 sample3은 Function 생성자를 통해 새로운 함수를 만들어 내고 변수에 할당한 것이다.
 
@@ -41,6 +43,8 @@ C의 경우, 전달하는 매개값을 eval함수로 처리해야됨으로 성�
 C의 예제를 보면 함수를 생성자로 생성이 가능하다는 것인데,
 
 이 것은 함수가 사실 **객체**이고, Function 타입의 **인스턴스**이며, **프로퍼티**와 **메서드**를 갖고 있다는 것을 의미한다.
+
+함수는 객체이므로 C에 prototype이란 프로퍼티에 접근이 가능하다.
 <br/><br/>
 
 ####sample4
@@ -94,6 +98,41 @@ person("홍길동", 45);
 arguments 객체의 값을 변경했을 때, 함수에 전달받은 매개값도 변경된다.
 
 전달받은 매개값은 arguments의 속성 값으로 들어가기 때문에 같은 참조를 갖게 된다.
+
+<br/><br/>
+
+####sample7
+```javascript
+var no = 0; // 이 코드는 사실 window.no = 0; 과 같다.
+console.log( no ); // 0
+console.log( window.no ); // 0
+
+no = -1; // window.no를 -1로 변경.
+console.log( no ); // -1
+console.log( window.no ); // -1
+
+// no를 변경했지만, window.no가 변경.
+```
+javascript에선 각 스코프 별로 변수를 관리하는 객체를 갖는다.
+
+전역 스코프에선 window가 변수관리 객체이고,
+
+로컬 스코프(함수)에선 arguments가 변수관리 객체이다.
+
+
+
+####sample8
+```javascript
+function whoIsMe(){
+	console.log(this);
+}
+whoIsMe(); // window
+
+var person = { whoIsMe: whoIsMe };
+person.whoIsMe(); // Object { __proto__: Object, whoIsMe: whoIsMe }
+
+new whoIsMe(); // whoIsMe { __proto__: Object }
+```
 
 
 #진행중..
