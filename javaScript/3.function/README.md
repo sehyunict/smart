@@ -84,45 +84,6 @@ arguments의 callee 속성은 arguments 객체를 생성한 함수의 참조 이
 
 ####sample6
 ```javascript
-function person(name, age){
-	console.log( name, age ); //홍길동 45
-	name = "cmd[var]";
-	console.log( arguments[0], arguments[1] ); //cmd[var] 45
-	arguments[0] = "cmd[args]";
-	console.log( name, age ); //cmd[args] 45
-}
-person("홍길동", 45);
-```
-함수에 전달받은 매개값을 변경했을 때, arguments 객체의 값도 변경된다.
-
-arguments 객체의 값을 변경했을 때, 함수에 전달받은 매개값도 변경된다.
-
-전달받은 매개값은 arguments의 속성 값으로 들어가기 때문에 같은 참조를 갖게 된다.
-
-<br/><br/>
-
-####sample7
-```javascript
-var no = 0; // 이 코드는 사실 window.no = 0; 과 같다.
-console.log( no ); // 0
-console.log( window.no ); // 0
-
-no = -1; // window.no를 -1로 변경.
-console.log( no ); // -1
-console.log( window.no ); // -1
-
-// no를 변경했지만, window.no가 변경.
-```
-javascript에선 각 스코프 별로 변수를 관리하는 객체를 갖는다.
-
-전역 스코프에선 window가 변수관리 객체이고,
-
-로컬 스코프(함수)에선 arguments가 변수관리 객체이다.
-
-
-
-####sample8
-```javascript
 function whoIsMe(){
 	console.log(this);
 }
@@ -131,18 +92,24 @@ whoIsMe(); // window
 var person = { whoIsMe: whoIsMe };
 person.whoIsMe(); // Object { __proto__: Object, whoIsMe: whoIsMe }
 
-new whoIsMe(); // whoIsMe { __proto__: Object }
+new whoIsMe(); // whoIsMe { __proto__: Object } -> 여기서 Object는 whoIsMe.prototype과 같다.
 ```
+함수 whoIsMe에 this를 찍어봤다.
 
+함수가 일반적으로 호출될 때, this는 whoIsMe함수를 프로퍼티로 갖고있는 객체가 된다.
 
-#진행중..
+전역에서 실행하게되면, whoIsMe란 함수는 window의 프로퍼티이므로, window가 찍히고,
+
+person 객체의 속성값으로 넣으면, person 객체의 프로퍼티이므로, person객체 자체가 찍힌다.
+  
+함수가 생성자로 호출될 때, this는 새로운 객체(new Object)가 할당된다.
 
 <br/><br/>
 
 #### 이전편 
 2.scope - https://github.com/sehyunict/smart/tree/master/javaScript/2.scope
 #### 다음편
-4.context
+4.hoisting - https://github.com/sehyunict/smart/tree/master/javaScript/4.hoisting
 
 <br/>
 <br/>
