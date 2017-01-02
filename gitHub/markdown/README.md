@@ -152,8 +152,8 @@ __double underscores__
 
 #####1.8. 이미지
 
-![Alt text](/path/to/img.jpg)
-![Alt text](/path/to/img.jpg "Optional title")
+![배고파](https://home.worksmobile.com/article/image/view/3472332077089315077?type=w720)
+![배고파](https://home.worksmobile.com/article/image/view/3472332077089315077?type=w720 "비피터")
 
 #####1.9 줄바꿈
  **<br/>**태그를 추가하여 줄바꿈
