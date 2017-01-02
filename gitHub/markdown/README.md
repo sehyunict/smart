@@ -152,10 +152,16 @@ __double underscores__
 
 #####1.8. 이미지
 
-![배고파](https://home.worksmobile.com/article/image/view/3472332077089315077?type=w720)
-![배고파](https://home.worksmobile.com/article/image/view/3472332077089315077?type=w720 "비피터")
+** ![굶지마](이미지경로_상대경로가능) **
+
+![배고파](./dontStarve.jpg)
+
+** ![굶지마](이미지경로_상대경로가능 "투게더") **
+
+![배고파](./dontStarve.jpg "투게더")
 
 #####1.9 줄바꿈
  **<br/>**태그를 추가하여 줄바꿈
+
 
 <br><br>
