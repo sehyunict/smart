@@ -157,8 +157,12 @@ __double underscores__
 
 ![굶지마](./dontStarve.jpg "투게더")
 
-#####1.9 줄바꿈
+#####1.9. 줄바꿈
  **<br/>**태그를 추가하여 줄바꿈
 
+
+#####1.10. 이모티콘
+:smile::ghost::cow:<br/>
+http://www.webpagefx.com/tools/emoji-cheat-sheet/
 
 <br><br>
