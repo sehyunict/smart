@@ -1,6 +1,4 @@
-# Object
-
-ECMA-262 5판의 Object를 설명한다.
+# Object.defineProperty
 
 <br/>
 
@@ -164,6 +162,13 @@ sample4는 writable 속성을 false로 할당한다. (기본값: true)
 writable속성은 할당된 값의 변경가능 여부이다.
 
 <br/><br/>
+
+## 접근자 프로퍼티
+
+####sample5
+```javascript
+
+```
 
 ###TODO 
 
