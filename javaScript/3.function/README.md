@@ -103,8 +103,8 @@ new whoIsMe(); // whoIsMe { __proto__: Object } -> 여기서 Object는 whoIsMe.p
 person 객체의 속성값으로 넣으면, person 객체의 프로퍼티이므로, person객체 자체가 찍힌다.
   
 함수가 생성자로 호출될 때, this는 새로운 객체(new Object)가 할당된다.
-
 <br/><br/>
+<br/>
 
 #### 이전편 
 2.scope - https://github.com/sehyunict/smart/tree/master/javaScript/2.scope
