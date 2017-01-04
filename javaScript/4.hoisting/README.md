@@ -63,10 +63,12 @@ var person = function(){
 ```
 함수의 표현식과 선언식은 호이스팅을 제외하곤 다른점이 없다.
 <br/><br/>
-
+<br/>
 
 #### 이전편 
 3.function - https://github.com/sehyunict/smart/tree/master/javaScript/3.function
+#### 다음편
+5.object - https://github.com/sehyunict/smart/tree/master/javaScript/5.object
 
 <br/>
 <br/>
