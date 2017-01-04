@@ -17,6 +17,8 @@
 #### noSql
 > ready
 
+#### bidData
+> [basic](https://github.com/sehyunict/smart/blob/master/bigData/)
 <br/>
 <br/>
 <br/>
