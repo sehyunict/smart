@@ -217,7 +217,7 @@ CatType.prototype.__proto__는 원래 Object.prototype이다.
 
 CatType이 Animal.prototype의 메서드를 사용할 수 있게 되었다.
 
-Animal.prototype.__proto__는 변경이 없음으로 Object.prototype이므로,
+Animal.prototype.__proto__는 변경이 없음으로 Object.prototype과 같고,
 
 Animal은 Object.prototype의 메서드만을 사용할 수 있다.
 
