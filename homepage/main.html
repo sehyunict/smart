@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="/smart/homepage/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
 <style type="text/css">
 body{margin: 0px; padding: 0px;}
+nav{padding: 0px 100px 0px 100px; text-align: center;}
 nav .logo{height: 50px;}
 .main-carousel img{height: 100%;}
 
@@ -15,9 +16,18 @@ nav .logo{height: 50px;}
 <script type="text/javascript">
 $(function ready(){
 	
+	//리사이즈
+	$(window).resize(function(e){
+		var imgHeight = $(this).height() - 50;
+		$('#main-carousel').find('img').each(function(idx, img){
+			$(img).height( imgHeight );
+		});
+		
+	});
+	
 	//메인 캐러셀 동작
 	$('#main-carousel').carousel({
-		interval: 2000
+		interval: 5000
 	});
 	
 });
