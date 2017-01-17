@@ -9,7 +9,8 @@
 body{margin: 0px; padding: 0px;}
 nav{position: fixed; z-index: 5; top: 0px; width: 100%; padding: 0px 100px 0px 100px; background-color: rgba(238, 239, 241, 1);}
 nav .logo{height: 50px;}
-.main-carousel-container{margin-top: 50px;}
+.main-carousel-container{margin-top: 50px; background-color: rgba(238, 239, 241, 1);}
+.main-carousel img{max-width: 100%; height: auto;}
 </style>
 <script type="text/javascript" src="/smart/homepage/lib/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/smart/homepage/lib/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
@@ -18,10 +19,7 @@ $(function ready(){
 	
 	//리사이즈
 	$(window).resize(function(e){
-		var imgHeight = $(this).height() - 50;
-		$('#main-carousel').find('img').each(function(idx, img){
-			$(img).height( imgHeight );
-		});
+		
 	}).trigger("resize");
 	
 	//메인 캐러셀 동작
@@ -40,7 +38,7 @@ $(function ready(){
 
 <!-- 메인 캐러셀 -->
 <div class="container-fluid main-carousel-container">
-	<div id="main-carousel" class="container-fluid slide" data-ride="carousel">
+	<div id="main-carousel" class="carousel slide main-carousel" data-ride="carousel">
 	  <!-- Indicators -->
 		<ol class="carousel-indicators">
 		  <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
