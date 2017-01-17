@@ -21,9 +21,8 @@ $(function ready(){
 		var imgHeight = $(this).height() - 50;
 		$('#main-carousel').find('img').each(function(idx, img){
 			$(img).height( imgHeight );
-		}).trigger("resize");
-		
-	});
+		});
+	}).trigger("resize");
 	
 	//메인 캐러셀 동작
 	$('#main-carousel').carousel({
