@@ -6,9 +6,9 @@
 <link rel="stylesheet" type="text/css" href="/smart/homepage/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
 <style type="text/css">
 body{margin: 0px; padding: 0px;}
-nav{padding: 0px 100px 0px 100px; text-align: center;}
+nav{position: fixed; z-index: 5; padding: 0px 100px 0px 100px; background-color: rgba(238, 239, 241, 1);}
 nav .logo{height: 50px;}
-.main-carousel img{height: 100%;}
+.container{margin-top: 50px;}
 
 </style>
 <script type="text/javascript" src="/smart/homepage/lib/jquery-3.1.1.min.js"></script>
@@ -21,7 +21,7 @@ $(function ready(){
 		var imgHeight = $(this).height() - 50;
 		$('#main-carousel').find('img').each(function(idx, img){
 			$(img).height( imgHeight );
-		});
+		}).trigger("resize");
 		
 	});
 	
@@ -38,6 +38,8 @@ $(function ready(){
 <nav>
 	<img class="logo" src="/smart/homepage/img/nav-logo.png" />
 </nav>
+
+<div class="container">
 
 <!-- 메인 캐러셀 -->
 <div id="main-carousel" class="carousel slide main-carousel" data-ride="carousel">
@@ -67,7 +69,7 @@ $(function ready(){
 </div>
 <!-- //메인 캐러셀 -->
 
-
+</div>
 
 </body>
 </html>
