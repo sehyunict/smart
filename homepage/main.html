@@ -4,13 +4,29 @@
 <meta charset="UTF-8">
 <title>세현아이씨티 깃허브 페이지</title>
 <link rel="stylesheet" type="text/css" href="/smart/homepage/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+<style type="text/css">
+body{margin: 0px; padding: 0px;}
+</style>
 <script type="text/javascript" src="/smart/homepage/lib/jquery-3.1.1.min.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+$(function ready(){
+	
+	//메인 캐러셀 동작
+	$('#main-carousel').carousel({
+		interval: 2000
+	});
+	
+});
+</script>
 </head>
 <body>
 
+<nav>
+	<img src="/smart/homepage/img/nav-logo.png" height="50px;" />
+</nav>
 
-<div id="main-carousel" class="carousel slide" data-ride="carousel">
+<!-- 메인 캐러셀 -->
+<div id="main-carousel" class="carousel slide main-carousel" data-ride="carousel">
   <!-- Indicators -->
 	<ol class="carousel-indicators">
 	  <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
@@ -34,17 +50,9 @@
 	  </div>
 	  ...
 	</div>
+</div>
+<!-- //메인 캐러셀 -->
 
-	<!-- Controls -->
-	  <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-	</div>
 
 
 </body>
