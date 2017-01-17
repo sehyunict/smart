@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>세현아이씨티 깃허브 페이지</title>
 <link rel="stylesheet" type="text/css" href="/smart/homepage/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
 <style type="text/css">
 body{margin: 0px; padding: 0px;}
 nav{position: fixed; z-index: 5; top: 0px; width: 100%; padding: 0px 100px 0px 100px; background-color: rgba(238, 239, 241, 1);}
 nav .logo{height: 50px;}
-.container{margin-top: 50px;}
-
+.main-carousel-container{margin-top: 50px;}
 </style>
 <script type="text/javascript" src="/smart/homepage/lib/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/smart/homepage/lib/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
@@ -38,36 +38,40 @@ $(function ready(){
 	<img class="logo" src="/smart/homepage/img/nav-logo.png" />
 </nav>
 
-<div class="container">
-
 <!-- 메인 캐러셀 -->
-<div id="main-carousel" class="carousel slide main-carousel" data-ride="carousel">
-  <!-- Indicators -->
-	<ol class="carousel-indicators">
-	  <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-	  <li data-target="#main-carousel" data-slide-to="1"></li>
-	  <li data-target="#main-carousel" data-slide-to="2"></li>
-	</ol>
-
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-	  <div class="item active">
-	    <img src="/smart/homepage/img/main-carousel1.jpg" alt="...">
-	    <div class="carousel-caption">
-	      ...
-	    </div>
-	  </div>
-	  <div class="item">
-	    <img src="/smart/homepage/img/main-carousel2.jpg" alt="...">
-	    <div class="carousel-caption">
-	      ...
-	    </div>
-	  </div>
-	  ...
+<div class="container-fluid main-carousel-container">
+	<div id="main-carousel" class="container-fluid slide" data-ride="carousel">
+	  <!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#main-carousel" data-slide-to="1"></li>
+		  <li data-target="#main-carousel" data-slide-to="2"></li>
+		</ol>
+	
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		  <div class="item active">
+		    <img src="/smart/homepage/img/main-carousel1.jpg" alt="...">
+		    <div class="carousel-caption">
+		      ...
+		    </div>
+		  </div>
+		  <div class="item">
+		    <img src="/smart/homepage/img/main-carousel2.jpg" alt="...">
+		    <div class="carousel-caption">
+		      ...
+		    </div>
+		  </div>
+		  ...
+		</div>
 	</div>
 </div>
 <!-- //메인 캐러셀 -->
 
+<div class="container">
+  <div class="row">
+    ...
+  </div>
 </div>
 
 </body>
