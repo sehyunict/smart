@@ -1,4 +1,4 @@
-# Object.defineProperty
+# Object.prototype.defineProperty
 
 <br/>
 
