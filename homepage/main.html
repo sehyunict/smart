@@ -7,10 +7,20 @@
 <link rel="stylesheet" type="text/css" href="/smart/homepage/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
 <style type="text/css">
 body{margin: 0px; padding: 0px;}
-nav{position: fixed; z-index: 5; top: 0px; width: 100%; padding: 0px 100px 0px 100px; background-color: rgba(238, 239, 241, 1);}
-nav .logo{height: 50px;}
+nav{position: fixed; z-index: 5; top: 0px; width: 100%; height: 50px; padding: 0px 100px 0px 100px; background-color: rgba(238, 239, 241, 1);}
+nav .logo{height: 50px; float: left; padding: 10px 0px 10px 0px;}
 .main-carousel-container{margin-top: 50px; background-color: rgba(238, 239, 241, 1);}
 .main-carousel img{max-width: 100%; height: auto;}
+
+/* 작은 기기들 (태블릿, 768px 이상) */
+@media (min-width: @screen-sm-min) {  }
+
+/* 중간 기기들 (데스크탑, 992px 이상) */
+@media (min-width: @screen-md-min) {  }
+
+/* 큰 기기들 (큰 데스크탑, 1200px 이상) */
+@media (min-width: @screen-lg-min) {  }
+
 </style>
 <script type="text/javascript" src="/smart/homepage/lib/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/smart/homepage/lib/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
@@ -32,8 +42,11 @@ $(function ready(){
 </head>
 <body>
 
-<nav>
+<nav class="container">
 	<img class="logo" src="/smart/homepage/img/nav-logo.png" />
+	<ul>
+		<li></li>
+	</ul>
 </nav>
 
 <!-- 메인 캐러셀 -->
@@ -43,7 +56,6 @@ $(function ready(){
 		<ol class="carousel-indicators">
 		  <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
 		  <li data-target="#main-carousel" data-slide-to="1"></li>
-		  <li data-target="#main-carousel" data-slide-to="2"></li>
 		</ol>
 	
 		<!-- Wrapper for slides -->
