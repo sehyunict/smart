@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../dist/SGK.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(){
+	var rect = new SGK.Rect("rect_0", 500, 500, {
+		width: 200,
+		height: 200,
+		"background-color": "#ff0000",
+		"border-color": "#00ff00",
+		"border-width": 20
+	});
+	var div = document.querySelector("#toString");
+	div.innerHTML = rect.toString();
+	
+	var canvas = document.querySelector("#canvas");
+	var ctx = canvas.getContext("2d");
+	rect.draw( ctx );
+	
+}, false);
+</script>
+</head>
+<body>
+<div id="toString"></div>
+<canvas id="canvas" width="1000" height="1000" style="border: #ccc solid 1px;"></canvas>
+</body>
+</html>
