@@ -1,12 +1,12 @@
-#gulp.js 사용법
+# gulp.js 사용법
 ---
 
-####1. gulp란?
+#### 1. gulp란?
 ```
 배포툴
 ```
 <br><br>
-####2. gulp 설치
+#### 2. gulp 설치
 ```
 // 1. 전역으로 먼저 설치
 $ npm install gulp -g
@@ -19,7 +19,7 @@ $ npm install gulp --save-dev
 $ npm install gulp-concat --save-dev
 ```
 <br><br>
-####3. gulpfile.js 작성
+#### 3. gulpfile.js 작성
 ```
 // 반드시 이름은 gulpfile.js
 // plugins
@@ -59,19 +59,19 @@ gulp.task('default', ['min'], function(){
 });
 ```
 <br><br>
-####4. gulp 실행
+#### 4. gulp 실행
 ```
 $ cd 프로젝트경로
 $ gulp
 ```
 <br><br>
-####5. 결과물 확인
+#### 5. 결과물 확인
 ```
 /dist/SGK.js
 /dist/SGK.min.js
 ```
 <br><br>
-####5. 샘플 확인
+#### 6. 샘플 확인
 ```
 /sample/browser.html
 /sample/node.js
